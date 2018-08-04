@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.x" client="site" method="upgrade">
+<name>Modalvuegallery</name>
+<author>Kian William Nowrouzian</author>
+<creationDate>June 29, 2018</creationDate>
+<copyright>Copyright© 2018 Kian William Nowrouzian</copyright>
+<license>GNU General Public License version 3 ; see COPYING.txt</license>
+<authorEmail>mezmer121@gmail.com</authorEmail>
+<authorUrl>http://www.extensions.lord121.ir</authorUrl>
+<version>1.0.0</version>
+<description><![CDATA[<div style="background:#e71e9e; width:300px;font-weight:bold; font-style:normal; color:#fcfafb;">Welcome to Modalvue Gallery . Do not forget you must set a class name preceding with space in header class text box under advanced tab in module backend(e.g " lea"), Enjoy! </div>]]></description>
+<updateservers>
+		<server type="extension" name="modalvuegallery update" priority="1">http://www.extensions.lord121.ir/myextensions.xml</server>
+</updateservers>
+<files>
+	<filename>mod_modalvuegallery.xml</filename>
+	<filename module="mod_modalvuegallery">mod_modalvuegallery.php</filename>
+	<filename>helper.php</filename>
+	<filename>index.html</filename>
+	<filename>readme.txt</filename>
+	<filename>COPYING.txt</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.html</filename>
+	<filename>css/mystyles.css</filename>
+	<filename>css/index.html</filename>
+	<filename>js/vue.js</filename>
+	<filename>js/tablegallery.js</filename>
+	<filename>js/index.html</filename>
+	<folder>images</folder>
+	<folder>elements</folder>
+</files>
+<languages folder="language">
+<language tag="en-GB">en-GB.mod_modalvuegallery.ini</language>
+<language tag="en-GB">en-GB.mod_modalvuegallery.sys.ini</language>
+</languages>
+<config>
+<fields name="params">
+	<fieldset name="basic" >
+		<field name="containerw" type="text" label="MOD_MODALVUEGALLERY_CONTAINERWIDTH_LABEL" description="MOD_MODALVUEGALLERY_CONTAINERWIDTH_DESC" filter="integer" />
+		<field name="imgw" type="text" label="MOD_MODALVUEGALLERY_IMAGEWIDTH_LABEL" description="MOD_MODALVUEGALLERY_IMAGEWIDTH_DESC" filter="integer" />
+		<field name="imgh" type="text" label="MOD_MODALVUEGALLERY_IMAGEHEIGHT_LABEL" description="MOD_MODALVUEGALLERY_IMAGEHEIGHT_DESC" filter="integer" />	
+		<field name="modalimgw" type="text" label="MOD_MODALVUEGALLERY_MODALIMAGEWIDTH_LABEL" description="MOD_MODALVUEGALLERY_MODALIMAGEWIDTH_DESC" filter="integer" />
+		<field name="modalimgh" type="text" label="MOD_MODALVUEGALLERY_MODALIMAGEHEIGHT_LABEL" description="MOD_MODALVUEGALLERY_MODALIMAGEHEIGHT_DESC" filter="integer" />	
+		<field name="modalcontainerw" type="text" label="MOD_MODALVUEGALLERY_MODALCONTAINERWIDTH_LABEL" description="MOD_MODALVUEGALLERY_MODALCONTAINERWIDTH_DESC" filter="integer" />
+		<field name="lib" type="list" label="MOD_MODALVUEGALLERY_LIB_LABEL" description="MOD_MODALVUEGALLERY_LIB_DESC" default="1">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+	    </field>		
+	<field name="containerbakcol" type="mycolor" label="MOD_MODALVUEGALLERY_CONTAINERBAKCOL_LABEL" description="MOD_MODALVUEGALLERY_CONTAINERBAKCOL_DESC" default="#7AB7F5" />
+	<field name="modaltxtcol" type="mycolor" label="MOD_MODALVUEGALLERY_MODALTXTCOL_LABEL" description="MOD_MODALVUEGALLERY_MODALTXTCOL_DESC" default="#7AB7F5" />
+	<field name="modalbakcol" type="mycolor" label="MOD_MODALVUEGALLERY_MODALBAKCOL_LABEL" description="MOD_MODALVUEGALLERY_MODALBAKCOL_DESC" default="#7AB7F5" />
+	<field name="modalbuttsbakcol" type="mycolor" label="MOD_MODALVUEGALLERY_MODALBUTTSBAKCOL_LABEL" description="MOD_MODALVUEGALLERY_MODALBUTTSBAKCOL_DESC" default="#7AB7F5" />
+	<field name="modalbuttstxtcol" type="mycolor" label="MOD_MODALVUEGALLERY_MODALBUTTSTXTCOL_LABEL" description="MOD_MODALVUEGALLERY_MODALBUTTSTXTCOL_DESC" default="#7AB7F5" />
+	<field name="modalbordercol" type="mycolor" label="MOD_MODALVUEGALLERY_MODALBORDERCOL_LABEL" description="MOD_MODALVUEGALLERY_MODALBORDERCOL_DESC" default="#7AB7F5" />
+	<field name="modalimgbordercol" type="mycolor" label="MOD_MODALVUEGALLERY_MODALIMGBORDERCOL_LABEL" description="MOD_MODALVUEGALLERY_MODALIMGBORDERCOL_DESC" default="#7AB7F5" />
+	<field name="modalfontfamily" type="text" label="MOD_MODALVUEGALLERY_FONTFAMILY_LABEL" description="MOD_MODALVUEGALLERY_FONTFAMILY_DESC" filter="raw" default="arial" />
+	<field name="modalfontsize" type="text" label="MOD_MODALVUEGALLERY_FONTSIZE_LABEL" description="MOD_MODALVUEGALLERY_FONTSIZE_DESC" filter="raw" default="1.3" />
+	<field name="modalfontstyle" type="text" label="MOD_MODALVUEGALLERY_FONTSTYLE_LABEL" description="MOD_MODALVUEGALLERY_FONTSTYLE_DESC" filter="raw" default="normal" />
+	<field name="modalfontweight" type="text" label="MOD_MODALVUEGALLERY_FONTWEIGHT_LABEL" description="MOD_MODALVUEGALLERY_FONTWEIGHT_DESC" filter="raw" default="bold" />
+	<field name="modalimgbordersize" type="text" label="MOD_MODALVUEGALLERY_IMGBORDERSIZE_LABEL" description="MOD_MODALVUEGALLERY_IMGBORDERSIZE_DESC" filter="INT" default="1" />
+	<field name="modalimgborderradius" type="text" label="MOD_MODALVUEGALLERY_IMGBORDERRADIUS_LABEL" description="MOD_MODALVUEGALLERY_IMGBORDERRADIUS_DESC" filter="INT" default="0" />
+	<field name="modalbordersize" type="text" label="MOD_MODALVUEGALLERY_BORDERSIZE_LABEL" description="MOD_MODALVUEGALLERY_BORDERSIZE_DESC" filter="INT" default="0" />
+	<field name="modalborderradius" type="text" label="MOD_MODALVUEGALLERY_BORDERRADIUS_LABEL" description="MOD_MODALVUEGALLERY_BORDERRADIUS_DESC" filter="INT" default="0" />
+	</fieldset>
+	<fieldset name="slides" addfieldpath="/modules/mod_modalvuegallery/elements">
+		<field name="slides" type="myslidesmanager" label="MOD_MODALVUEGALLERYA_SLIDE_LABEL" description="MOD_MODALVUEGALLERYA_SLIDE_DESC" filter="raw" default="[{}]" />
+	</fieldset>
+</fields>
+</config>
+</extension>
