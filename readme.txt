@@ -5,9 +5,9 @@ Also YOU MUST ADD A CLASS NAME IN HEADER CLASS TEXTBOX PRECEDING A SPACE UNDER A
 The license is GNU/GPLv3
 It is written for joomla 3.x,fill all formfields in 
 module to make it work, you may download the module at:
-http://www.extensions.lord121.ir/mymodules/modalvuegallery-download.html
+https://www.extensions.kwproductions121.com/mymodules/modalvuegallery-download.html
 you can also view an instance at :
-http://www.extensions.lord121.ir/mymodules/modalvuegallery-demo.html
+https://www.extensions.kwproductions121.com/mymodules/modalvuegallery-demo.html
 In case of any problem contact me at:
 mezmer121@gmail.com
 long live science.
